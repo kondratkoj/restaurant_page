@@ -1,0 +1,25 @@
+{
+  "name": "restaurant_page",
+  "version": "1.0.0",
+  "description": "This will be my Restaurant Page Project for The Odin Project. We are to use webpack and node to package this finished project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kondratkoj/restaurant_page.git"
+  },
+  "keywords": [],
+  "author": "kondrakoj",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/kondratkoj/restaurant_page/issues"
+  },
+  "homepage": "https://github.com/kondratkoj/restaurant_page#readme",
+  "devDependencies": {
+    "webpack": "^5.108.4",
+    "webpack-cli": "^7.2.1"
+  }
+}
