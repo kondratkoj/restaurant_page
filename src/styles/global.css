@@ -1,0 +1,27 @@
+body {
+  height: 100dvh;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 1fr 7fr 1fr;
+}
+
+.header,
+.main,
+.footer {
+  border: 1px solid black;
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
