@@ -16,12 +16,24 @@ body {
 
 .header {
   grid-area: header;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  background-color:rgb(229, 168, 53)
 }
 
-.main {
+.content {
   grid-area: main;
+  background-color: rgb(203, 203, 203)
 }
 
 .footer {
   grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(229, 168, 53)
+
 }
