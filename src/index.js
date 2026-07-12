@@ -3,7 +3,7 @@ import "./styles/reset.css"
 import { makeElement } from "./domHelper.js";
 import { createHome } from "./home.js";
 import { createMenu } from "./menu.js";
-// import { createAbout } from "./about.js";
+import { createAbout } from "./about.js";
 
 const body = document.querySelector("body");
 const header = makeElement("div", "header");
@@ -32,7 +32,7 @@ menuBtn.addEventListener("click", () => {
   main.replaceChildren(createMenu());
 });
 
-// aboutBtn.addEventListener("click", () => {
-//   main.replaceChildren(createAbout());
-// });
+aboutBtn.addEventListener("click", () => {
+  main.replaceChildren(createAbout());
+});
 

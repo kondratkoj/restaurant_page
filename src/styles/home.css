@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-ul {
+.hrList {
   display: flex;
   flex-direction: column;
   padding: 0;
