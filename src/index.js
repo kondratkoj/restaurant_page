@@ -20,6 +20,9 @@ header.append(pageTitle, navBar)
 navBar.append(homeBtn, menuBtn, aboutBtn)
 footer.append(footerText, footerText2);
 
+main.append(createHome());
+
 homeBtn.addEventListener("click", () => {
-  main.append(createHome());
+  main.replaceChildren(createHome());
 })
+

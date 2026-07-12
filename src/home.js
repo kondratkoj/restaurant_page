@@ -1,6 +1,6 @@
 import { makeElement } from "./domHelper.js";
-import "./styles/reset.css";
 import "./styles/home.css";
+import foodImg from "./photos/food.jpg"
 
 export function createHome() {
   const openHours = [
@@ -18,7 +18,9 @@ export function createHome() {
   const intro = makeElement("section", "intro");
   const restName = makeElement("h2", "restName", "Restaurant Name Here");
   const tagLine = makeElement("div", "tagLine", "Food you won't forget, and an experience you'd like to");
-  const image = makeElement("img", "image");
+  const img = makeElement("img", "img");
+  img.src = foodImg;
+  img.alt = "Picture of Food";
 
   const hours = makeElement("section", "hours");
   const hrTitle = makeElement("h3", "hrTitle","Hours of Operation");
@@ -30,7 +32,7 @@ export function createHome() {
 
   address.textContent = "Amesbury, Wiltshire, SP4 7DE, United Kingdom"
 
-  intro.append(restName, tagLine, image);
+  intro.append(restName, tagLine, img);
   hours.append(hrTitle, hrList);
   location.append(locTitle, address);
 
