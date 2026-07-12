@@ -2,6 +2,7 @@ import "./styles/global.css"
 import "./styles/reset.css"
 import { makeElement } from "./domHelper.js";
 import { createHome } from "./home.js";
+import { createMenu } from "./menu.js";
 
 const body = document.querySelector("body");
 const header = makeElement("div", "header");
@@ -16,13 +17,17 @@ const footerText = makeElement("div", "footerText", "Behold my incredible module
 const footerText2 = makeElement("div", "footerText2","Please excuse my lack of styling");
 
 body.append(header, main, footer);
-header.append(pageTitle, navBar)
-navBar.append(homeBtn, menuBtn, aboutBtn)
+header.append(pageTitle, navBar);
+navBar.append(homeBtn, menuBtn, aboutBtn);
 footer.append(footerText, footerText2);
 
 main.append(createHome());
 
 homeBtn.addEventListener("click", () => {
   main.replaceChildren(createHome());
-})
+});
+
+menuBtn.addEventListener("click", () => {
+  main.replaceChildren(createMenu());
+});
 
